@@ -5,6 +5,8 @@ npm i
 ```
 npm start
 ```
+效果如下：
+![](https://user-gold-cdn.xitu.io/2019/1/31/168a1fcc4b06e106?w=300&h=470&f=gif&s=4867334)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
