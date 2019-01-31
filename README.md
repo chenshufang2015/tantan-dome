@@ -1,3 +1,11 @@
+比较懒，直接用的脚手架，运行就直接
+```
+npm i
+```
+```
+npm start
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
