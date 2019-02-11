@@ -1,9 +1,5 @@
-import React, {
-  Component,
-} from 'react'
-import {
-  data,
-} from './index.json'
+import React, {Component,} from 'react'
+import {data} from './index.json'
 import './App.css'
 
 class App extends Component {
@@ -37,7 +33,6 @@ class App extends Component {
   // /* 激活层 */
   activeEl = el => {
     el.style.zIndex = 2
-    // console.log(el.style)
   }
 
   /* 图片HTML */
@@ -60,30 +55,17 @@ class App extends Component {
             <img src={`${lists[pre].url}`} alt='avatar' />
             <p className='info'>
               <span>
-                {' '}
                 {
                   `${lists[pre].name}`
                 }
-                {' '}
-
               </span>
-              {' '}
               <span>
-                {' '}
                 {
                   `${lists[pre].age}`
                 }
-                {' '}
-
               </span>
-              {' '}
-
             </p>
-            {' '}
-
           </div>
-          {' '}
-
         </div>
       )
     }
@@ -212,7 +194,6 @@ class App extends Component {
     this.site.left_val = parseFloat(this.site.x_move) - parseFloat(this.site.x_start)
 
     const Img = document.getElementById(`ind-${pre}`)
-    console.log('moveImg', Img)
 
     Img.style.transform = `translate3d(${this.site.left_val}px,${this.site.top_val}px,0px)`
   }
@@ -262,7 +243,8 @@ class App extends Component {
       next,
       lists,
     } = this.state
-    return (<div className="App">
+    return (
+    <div className="App">
       <div
         id="photo_box"
         ref={
@@ -280,30 +262,12 @@ class App extends Component {
           e => this.end(e)
         }>
         <div>
-          <div ref={
-            box => {
-              this.box = box
-            }
-          }>
-            {' '}
-            {
-              this.imgHtml(pre, lists)
-            }
-            {' '}
-            {
-              this.imgHtml1(next, lists)
-            }
-            {' '}
-
+          <div ref={box => {this.box = box}}>
+            {this.imgHtml(pre, lists)}
+            {this.imgHtml1(next, lists)}
           </div>
-          {' '}
-
         </div>
-        {' '}
-
       </div>
-      {' '}
-
     </div>
     )
   }

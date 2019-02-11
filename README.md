@@ -1,9 +1,9 @@
 比较懒，直接用的脚手架，运行就直接
 ```
-npm i
+yarn intsall
 ```
 ```
-npm start
+yarn start
 ```
 ### 效果如下：
 
